@@ -1,4 +1,4 @@
-this.getCurrentDate = function () {
+    this.get2ndLasttDate = function () {
         var d = new Date();
         var regDate = d.getDate()-1;
         var month = new Array();
@@ -19,8 +19,8 @@ this.getCurrentDate = function () {
         if (regDate < 10){
             regDate = '0'+regDate;
           }
-        var lastday = currentMonth + '\xa0' + regDate + ',' + '\xa0' +  currentYear;
-        console.log(lastday);
-        return lastday;
+        var today = currentMonth + ' ' + regDate + ',' + ' ' +  currentYear;
+        console.log(today);
+        return today;
 
     };
