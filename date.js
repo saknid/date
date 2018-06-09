@@ -1,6 +1,6 @@
-    this.get2ndLasttDate = function () {
+    this.getLastDate = function () {
         var d = new Date();
-        var regDate = d.getDate()-1;
+        var today = d.getDate()-1;
         var month = new Array();
         month[0] = "Jan";
         month[1] = "Feb";
@@ -19,8 +19,8 @@
         if (regDate < 10){
             regDate = '0'+regDate;
           }
-        var today = currentMonth + ' ' + regDate + ',' + ' ' +  currentYear;
-        console.log(today);
-        return today;
+        var lastday = currentMonth + ' ' + today + ',' + ' ' +  currentYear;
+        console.log(lastday);
+        return lastday;
 
     };
